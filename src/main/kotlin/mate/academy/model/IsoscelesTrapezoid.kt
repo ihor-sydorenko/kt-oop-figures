@@ -8,7 +8,8 @@ class IsoscelesTrapezoid(
 ) : Figure(color) {
     override fun draw() {
         println("Figure: isoscelesTrapezoid, area: ${getArea()} sq. units, "
-                + "baseOne: $baseOne units, baseTwo: $baseTwo, color: ${color.name}")
+                + "baseOne: $baseOne units, baseTwo: $baseTwo, "
+                + "height: $height units, color: ${color.name}")
     }
 
     override fun getArea(): Double {

@@ -26,7 +26,7 @@ class FigureSupplier {
             0 ->  getRandomSquare()
             MAGICNUMBER_1 ->  getRandomRectangle()
             MAGICNUMBER_2 ->  getRandomRightTriangle()
-            MAGICNUMBER_3 ->  getRandomCircle()
+            MAGICNUMBER_3 ->  getDefaultCircle()
             else -> {return getRandomIsoscelesTrapezoid()}
         }
     }
@@ -53,7 +53,7 @@ class FigureSupplier {
         )
     }
 
-    private fun getRandomCircle(): Circle {
+    private fun getDefaultCircle(): Circle {
         return Circle(DEFAULT_RADIUS, Color.WHITE)
     }
 
