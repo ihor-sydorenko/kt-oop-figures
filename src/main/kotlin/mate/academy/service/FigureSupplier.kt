@@ -9,21 +9,24 @@ import mate.academy.model.RightTriangle
 import mate.academy.model.Square
 import kotlin.random.Random
 
+const val MAGICNUMBER_1 = 1
+const val MAGICNUMBER_2 = 2
+const val MAGICNUMBER_3 = 3
 const val DEFAULT_RADIUS = 10
 const val FIGURES_COUNT = 5
 const val MAX_RANDOM_NUMBER = 100
 val DEFAULT_COLOR = Color.WHITE
 val colorSupplier = ColorSupplier()
 
-class FigureSupplier() {
+class FigureSupplier {
 
     fun getRandomFigure(): Figure {
         val nextInt = Random.nextInt(FIGURES_COUNT)
         return when (nextInt) {
             0 ->  getRandomSquare()
-            1 ->  getRandomRectangle()
-            2 ->  getRandomRightTriangle()
-            3 ->  getRandomCircle()
+            MAGICNUMBER_1 ->  getRandomRectangle()
+            MAGICNUMBER_2 ->  getRandomRightTriangle()
+            MAGICNUMBER_3 ->  getRandomCircle()
             else -> {return getRandomIsoscelesTrapezoid()}
         }
     }
@@ -51,7 +54,7 @@ class FigureSupplier() {
     }
 
     private fun getRandomCircle(): Circle {
-        return Circle(1, Color.WHITE)
+        return Circle(10, Color.WHITE)
     }
 
     private fun getRandomIsoscelesTrapezoid(): IsoscelesTrapezoid {

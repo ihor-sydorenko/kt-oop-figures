@@ -14,6 +14,6 @@ fun main() {
         } else {
             arrayOfFigures[i] = figureSupplier.getDefaultFigure()
         }
-        arrayOfFigures[i]?.draw()
     }
+    arrayOfFigures.forEach { it?.draw() }
 }
