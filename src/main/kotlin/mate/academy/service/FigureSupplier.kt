@@ -54,7 +54,7 @@ class FigureSupplier {
     }
 
     private fun getRandomCircle(): Circle {
-        return Circle(10, Color.WHITE)
+        return Circle(DEFAULT_RADIUS, Color.WHITE)
     }
 
     private fun getRandomIsoscelesTrapezoid(): IsoscelesTrapezoid {

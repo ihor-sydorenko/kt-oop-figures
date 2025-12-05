@@ -8,7 +8,7 @@ val figureSupplier = FigureSupplier()
 
 fun main() {
     val arrayOfFigures = arrayOfNulls<Figure>(ARRAY_SIZE)
-    for (i in 0..<arrayOfFigures.size) {
+    for (i in 0..arrayOfFigures.size - 1) {
         if (i < arrayOfFigures.size / 2) {
             arrayOfFigures[i] = figureSupplier.getRandomFigure()
         } else {
