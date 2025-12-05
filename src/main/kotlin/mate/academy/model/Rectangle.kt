@@ -6,7 +6,8 @@ class Rectangle(
     color: Color
 ) : Figure(color) {
     override fun draw() {
-        println("Figure: rectangle, area: ${getArea()} sq. units, width: $width units, height: $height,  color: ${color.name}")
+        println("Figure: rectangle, area: ${getArea()} sq. units, "
+                + "width: $width units, height: $height,  color: ${color.name}")
     }
 
     override fun getArea(): Double {

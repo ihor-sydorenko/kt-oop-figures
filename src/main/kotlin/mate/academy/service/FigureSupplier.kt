@@ -19,13 +19,13 @@ class FigureSupplier() {
 
     fun getRandomFigure(): Figure {
         val nextInt = Random.nextInt(FIGURES_COUNT)
-        when (nextInt) {
-            0 -> return getRandomSquare()
-            1 -> return getRandomRectangle()
-            2 -> return getRandomRightTriangle()
-            3 -> return getRandomCircle()
+        return when (nextInt) {
+            0 ->  getRandomSquare()
+            1 ->  getRandomRectangle()
+            2 ->  getRandomRightTriangle()
+            3 ->  getRandomCircle()
+            else -> {return getRandomIsoscelesTrapezoid()}
         }
-        return getRandomIsoscelesTrapezoid()
     }
 
     fun getDefaultFigure(): Figure = Circle(DEFAULT_RADIUS, DEFAULT_COLOR)

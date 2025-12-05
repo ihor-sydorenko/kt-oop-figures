@@ -10,6 +10,6 @@ class RightTriangle(
     }
 
     override fun getArea(): Double {
-        return 0.5 * firstLeg * secondLeg
+        return MAGICNUMBER * firstLeg * secondLeg
     }
 }
